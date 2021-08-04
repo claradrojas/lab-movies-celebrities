@@ -15,7 +15,7 @@ router.post('/celebrities/create', (req, res) => {
 
           Celebrity.create({ name, occupation, catchPhrase })
 
-          .then(dbCelebrities => {
+          .then(addCelebrity => {
             res.redirect('/celebrities')
           })
 
